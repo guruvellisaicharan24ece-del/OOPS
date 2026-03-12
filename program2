@@ -1,0 +1,23 @@
+class Educationalqualification:
+
+    def __init__(self, degree, university, year_of_passing, percentage):
+        self.degree = degree
+        self.university = university
+        self.year_of_passing = year_of_passing
+        self.percentage = percentage
+
+    def display_education(self):
+        print("Educational qualification")
+        print("Degree:", self.degree)
+        print("University:", self.university)
+        print("Year of passing:", self.year_of_passing)
+        print("Percentage:", self.percentage)
+class Resume(workexperience):
+
+    def __init__(self, name, email, phone, degree, university):
+-- workexperience --
+
+company name : TCS
+Designation : Software Engineer
+
+Year of Experience : 2
