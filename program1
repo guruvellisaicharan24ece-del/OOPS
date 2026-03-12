@@ -1,0 +1,65 @@
+class student:
+
+    def __init__(self, name, age, marks1, marks2, marks3, feebal):
+        self.name = name
+        self.age = age
+        self.marks1 = marks1
+        self.marks2 = marks2
+        self.marks3 = marks3
+        self.feebal = feebal
+
+    def calculate_average(self):
+        return (self.marks1 + self.marks2 + self.marks3) / 3
+
+    def calculate_CGPA(self):
+        avg = self.calculate_average()
+        return avg / 10
+
+    def display(self):
+        print("Student name:", self.name)
+        print("Age:", self.age)
+        print("Average:", self.calculate_average())
+        print("CGPA:", self.calculate_CGPA())
+        print("Fee balance:", self.feebal)
+        class library:
+
+    def __init__(self, booknumber, title, volume, rackno):
+        self.booknumber = booknumber
+        self.title = title
+        self.volume = volume
+        self.rackno = rackno
+
+    def calculate_penalty(self, days_late):
+        penalty_per_day = 5
+        return days_late * penalty_per_day
+
+    def display(self):
+        print("Book number:", self.booknumber)
+        print("Title:", self.title)
+        print("Volume:", self.volume)
+        print("Rack number:", self.rackno)
+        class college:
+
+    def __init__(self, college_code, college_name, college_location):
+        self.college_code = college_code
+        self.college_name = college_name
+        self.college_location = college_location
+        student1 = student("sai charan", 29, 89, 96, 78, 4000)
+
+library1 = library(101, "python programming", 2, "A21")
+
+college1 = college("10011", "Anits college", "Tiragapuvulaya")
+print("\n --- College Details --- ")
+college1.display()
+
+print("\n --- Student Details --- ")
+student1.display()
+
+print("\n --- Library Details --- ")
+library1.display()
+
+print("\n --- Penalty for 3 days late --- ")
+library1.calculate_penalty(3)
+
+
+        
